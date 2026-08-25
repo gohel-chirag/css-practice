@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors | Web Development</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        /* Universal Selector */
+        *{
+            background-color:rgb(236, 236, 236)
+        }
+
+        /* Element Selector */
+        div{
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        /* ID Selector */
+        #idselector{
+            background-color: rgb(255, 225, 127);
+            padding: 10px;
+        }
+
+        /* Class Selector */
+        .classselector{
+            background-color: rgb(255, 127, 127);
+            padding: 10px;
+        }
+
+        /* Child Selector */
+        span > p{
+            background-color: grey;
+            padding: 10px;
+        }
+
+        /* Descendant Selector */
+        section p{
+            background-color: rgb(77, 94, 255);
+            padding: 10px;
+        }
+
+
+
+        /* Pseudo Selectors */
+        a:link {
+            color: white;
+            background-color: blue;
+            padding: 10px;
+        }
+        a:active {
+            color: white;
+            background-color: rgb(147, 16, 151);
+            padding: 10px;
+        }
+        a:visited {
+            color: white;
+            background-color: rgb(151, 16, 16);
+            padding: 10px;
+        }
+        a:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- heading -->
+    <h1>CSS Selectors</h1>
+    <ol>
+        <li>Element Selector (tag)</li>
+        <li>Id Selector (id="__" | #__)</li>
+        <li>Class Selector (class="__" | .__)</li>
+        <li>Child Selector (div > p)</li>
+        <li>Descendant Selector (div p)</li>
+        <li>Universal Selector (*)</li>
+        <li>Pseudo Selector (links)</li>
+    </ol>
+    <hr>
+
+    <!-- Element Selector -->
+    <div>
+        Element Selector Example<br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo error molestias dolores quisquam ut nemo tenetur facere deleniti odit quod culpa quam corporis, possimus tempore excepturi est beatae deserunt!
+    </div><br>
+
+    <!-- ID Selector -->
+    <div id="idselector">
+        Id Selector Example<br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo error molestias dolores quisquam ut nemo tenetur facere deleniti odit quod culpa quam corporis, possimus tempore excepturi est beatae deserunt!
+    </div><br>
+
+    <!-- Class Selector -->
+    <div class="classselector">
+        Class Selector Example<br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo error molestias dolores quisquam ut nemo tenetur facere deleniti odit quod culpa quam corporis, possimus tempore excepturi est beatae deserunt!
+    </div>
+
+    <!-- Child Selector -->
+    <span>
+        <p>
+            Child Selector<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ratione earum minus culpa alias esse, pariatur assumenda voluptatem, incidunt fugiat ipsum quibusdam? Ut veniam explicabo illo qui ea sapiente magnam.
+        </p>
+    </span>
+
+    <!-- Descendant Selector -->
+    <section>
+        <p>Descendant Selector<br><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe assumenda quaerat voluptate quia placeat! Perspiciatis dicta eum, unde quaerat ratione omnis voluptas? Accusantium ut ratione cumque reiciendis rerum expedita praesentium!</p>
+    </section><br><br>
+
+
+    
+    <!-- Pseudo Selector -->
+    <h3>Pseudo Selectors :</h3>
+    <a href="http://www.youtube.com">Youtube</a>
+    <a href="http://www.facebook.com">Facebook</a>
+    <a href="http://www.instagram.com">Instagram</a>
+
+    <ol>
+        <li>Links hoi tyare <u>a:link</u> pseudo selector use thai chhe</li>
+        <li>Links per click kare tyare <u>a:active</u> pseudo selector use thai chhe</li>
+        <li>Links visit karel hoi tyare <u>a:visited</u> pseudo selector use thai chhe</li>
+        <li>Links per hover kare tyare <u>a:hover</u> pseudo selector use thai chhe</li>
+    </ol>
+</body>
+</html>
