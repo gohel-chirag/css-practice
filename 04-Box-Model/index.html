@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Models | Web Development</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; /* box-sizing : border-box box ni total height & width ni andarj padding/border ni size ganay chhe */
+        }
+
+        .box{
+            height: 100px;
+            background-color: brown;
+        }
+
+        /* Margin example */
+        .box1{
+            margin: 20px; /* margin box ni bar ni side ma apply thai chhe */
+        }
+
+        /* Padding Example */
+        .box2{
+            margin-top: 30px; /* margin ma uper niche banne jagya a margin aapel hoi tyare banne mathi vadhi margin hoi te apply thai chhe */
+            padding: 10px; /* padding box ni andar ni side ma apply thai chhe */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- heading -->
+    <h1>CSS Box Models</h1><hr>
+
+    <!-- Margin -->
+    <div class="box box1">
+        Margin Example
+    </div>
+
+    <!-- Padding -->
+    <div class="box box2">
+        Padding Example
+    </div>
+    
+</body>
+</html>
