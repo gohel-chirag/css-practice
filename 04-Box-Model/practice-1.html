@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Practice-1 | Web Development</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: whitesmoke;
+        }
+
+        .watch-card{
+            width: 300px;
+            background-color: #111827;
+            border:2px solid black;
+            color:#FFFFFF;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 30px
+        }
+
+        .watch-card img{
+            width: 260px;
+            height: auto;
+            margin-bottom: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+
+        .card-text{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .card-text p{
+            margin: 5px 0px;
+        }
+
+        .card-text b{
+            font-family: cinzel;
+        }
+
+        .watch-card button{
+            width: 100%; 
+            margin:10px auto; 
+            padding:10px 20px; 
+            background-color: #cbd5e1; 
+            color:rgb(0, 0, 0); 
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 align="center">Product Card</h1><hr>
+    <div class="watch-card">
+        <div class="card-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqXG8IgXdyl2UlRpkAe6m05GcdArqjEn1miXBLvMs5UQ&s=10" alt="watch image">
+        </div>
+        <div class="card-text">
+            <p><B>Watch name</B> : Apple Watch</p>
+            <p><B>Price</B> : ₹46,900</p>
+            <p><B>Description</B> : The Apple Watch Series 11 features advanced health monitoring like hypertension notifications, an LTPO3 wide-angle display, and up to 24 hours of battery life.</p>
+        </div>
+        <button>Buy Know</button>
+    </div>
+
+</body>
+</html>
+
+
+<!-- Practice task :
+HTML માં બનાવવાનું
+
+એક card બનાવો જેમાં:
+Watch image
+Watch name: Rolex Submariner
+Price: ₹9,50,000
+Short description
+Buy Now button
+CSS Requirements
+
+Card પર:
+width: 300px
+padding: 20px
+border: 2px solid black
+margin: 30px
+box-sizing: border-box
+background color
+
+Watch image પર:
+width
+padding
+border
+
+Button પર:
+padding
+margin-top
+border 
+
+-->
