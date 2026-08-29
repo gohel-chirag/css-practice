@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=s, initial-scale=1.0">
     <title>Fonts, Text & Color Properties | Web Development</title>
     <style>
+
+        /* google font family link */
         @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lavishly+Yours&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
         h1{
@@ -12,23 +14,75 @@
         }
 
         .font-family .first{
-            font-family: bruno ace sc;
+            font-family: bruno ace sc; /* Google font families */
             font-size: 1.4rem;
         }
         .font-family .second{
-            font-family: Lavishly Yours;
+            font-family: Lavishly Yours; /* Google font families */
             font-size: 1.6rem;
         }
         .font-family .third{
-            font-family: poppins;
+            font-family: poppins; /* Google font families */
             font-size: 1.4rem;
+        }
+
+
+        .font-family .line-height{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* multiple font-families */
+            line-height: 3; /* Line height thi line ni uper niche space add thai chhe */
+        }
+
+        .font-family .letter-spacing{
+            letter-spacing: 10px; /* Letter spacing thi latters vachche spacing add thai chhe */
+        }
+
+
+        /* Text-decoration properties */
+        .text-decoration .lower-case{
+            text-transform: lowercase;
+        }
+        .text-decoration .uper-case{
+            text-transform: uppercase;
+        }
+        .text-decoration .capitalize{
+            text-transform: capitalize;
+        }
+        .text-decoration .text-styling{
+            text-decoration: underline; /* text decoration karva */
+            text-decoration-color: red; /* underline ne color aapva */
+            text-decoration-style: wavy; /* underline ne style aapva */
+            text-decoration-thickness: 5px; /* underline style ni thickness vadharva & ghatadva */
+        }
+
+
+        /* Color example */
+        .color h2{
+            margin-left: 3px;
+            color: white; /* Font color example */
+            /* color: #8a2be2; */ 
+            /* color: rgb(138, 43, 226); */
+            /* color: rgba(138, 43, 226, 0.175); */
+            /* color: hsl(271, 76%, 53%); */
+
+            background-color:black; /* Background color example */
+        }
+        .color a{
+            color: white;
+            text-decoration: none;
+            border:2px inset black;
+            padding: 5px 13px;
+            border-radius: 20px;
+            background-color: blueviolet;
         }
     </style>
 </head>
 <body>
     <h1>Fonts, Text & Color Properties</h1><hr>
 
+
+    <!-- Font Properties -->
     <div class="font-family">
+        <!-- Font Family Examples -->
         <h1>Font Family Example</h1>
         <p class="first">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis enim repellat minus repudiandae?
@@ -38,7 +92,45 @@
         </p>
         <p class="third">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis enim repellat minus repudiandae?
-        </p>
+        </p><br>
+
+
+        <!-- line height example -->
+        <h1>Line Height Example</h1>
+        <p class="line-height">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel temporibus consectetur necessitatibus unde quia! Natus, accusantium. Et tempore non minus. Quas autem velit hic illo, deserunt repudiandae praesentium molestias dolorem.
+        Maiores aliquam quidem quaerat nemo ipsam? Ullam corporis hic inventore modi ab illum.</p><br>
+
+        <!-- Letter Spacing Example -->
+        <p class="letter-spacing">Letter Spacing Example</p><br>
+    </div>
+
+
+
+    <!-- Text decoration Properties -->
+    <div class="text-decoration">
+        <h1>Text Decoration Example</h1>
+        <!-- text transform example -->
+        <p class="lower-case">Lower case. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+        <p class="uper-case">Upper case. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+        <p class="capitalize">Capitalize. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p><br>
+
+
+        <!-- text underline example -->
+        <p class="text-styling">Text-Decoration. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p><br>
+    </div>
+
+
+
+    <!-- Color Properties -->
+    <div class="color">
+        <h1>Color Example</h1>
+        <!-- text color example -->
+        <h2>text color changing</h2>
+
+        <!-- Color picker website link -->
+        <a href="http://htmlcolorcodes.com" target="_blank">Color Code Picker Website</a>
     </div>
 </body>
 </html>
