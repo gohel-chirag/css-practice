@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts, Text & Color Practice-1 | Web Development</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: whitesmoke;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .watch-card{
+            width: 300px;
+            background-color: #030305;
+            border:2px solid black;
+            color:#FFFFFF;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 30px
+        }
+
+        .watch-card img{
+            width: 100%;
+            height: auto;
+            padding: 5px;
+            margin-bottom: 20px;
+            border: 2px inset white;
+            border-radius: 10px;
+        }
+        
+        .card-text p{
+            margin: 5px 0px;
+        }
+
+        .card-text .watch-name{
+            text-align: center;
+            font-family: Playfair;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing:2px;
+        }
+
+        .card-text .watch-price{
+            font-weight: 600;
+            font-family: Poppins;
+            margin-top:15px;
+            text-decoration: underline;
+            color:#79a9f7;
+        }
+
+        .card-text .watch-description{
+            font-family: Poppins;
+            line: height 1.5em;
+            color:lightgrey;
+        }
+
+        .watch-card button{
+            width: 100%; 
+            margin:10px auto; 
+            padding:10px 20px; 
+            background-color: #10689a; 
+            color:white; 
+            border: 2px inset white;
+            border-radius: 30px;
+            text-transform: uppercase;
+            font-family: Playfair;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Product Card</h1><hr>
+    <div class="watch-card">
+        <div class="card-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwQYS3VI_TS7kZfgWUfOIGA_t41J6WTtI4sVBfaE8R5g&s=10" alt="watch image">
+        </div>
+        <div class="card-text">
+            <p class="watch-name">Rolex Submariner</p>
+            <p class="watch-price"><strong style="font-family: cinzel; font-size: 19px; color:white;">Price</strong> : ₹9,50,000</p>
+            <p class="watch-description"><strong style="font-family: cinzel; font-size: 19px; color:white;">Description</strong> : The Rolex Submariner is an iconic luxury sports and tool watch designed for diving, first introduced in 1953</p>
+        </div>
+        <button>Buy Now</button>
+    </div>
+
+</body>
+</html>
+
+
+<!-- Practice task :
+Exercise : Premium Watch Product Card
+
+એક product card બનાવો જેમાં:
+Watch image
+Watch name: Rolex Submariner
+Price: ₹9,50,000
+Short description
+BUY NOW button
+
+CSS Requirements
+1. Fonts :
+Requirements:
+Heading → font-size: 26px
+Heading → font-weight: 700
+Description → readable font
+Price → font-weight: 600
+
+
+2. Text Properties :
+Requirements:
+Watch name → center align
+Description → line-height આપો
+Button text → uppercase
+Watch heading માં થોડું letter-spacing
+Price ને underline કરો
+
+3. Colors :
+આ ત્રણેય color formats જરૂરથી practice કરો:
+HEX
+color: #ffffff;
+RGB
+color: rgb(255, 255, 255);
+RGBA
+background-color: rgba(255, 255, 255, 0.1);
+
+Requirement:
+Card → dark background
+Heading → white
+Price → કોઈ અલગ color
+Description → light/gray color
+Button → contrasting background
+-->
