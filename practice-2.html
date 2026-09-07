@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice-2 CSS | Web development</title>
     <style>
+        /* for all elements */
         *{
             margin: 0;
             padding: 0;
             background-color: #0F172A;
         }
 
+        /* for profile card */
         .profile-card{
             width: 400px;
             padding: 30px;
@@ -27,6 +29,7 @@
             background-color: #1E293B;
         }
 
+        /* for profile image */
         .profile-card img{
             width: 150px;
             height: auto;
@@ -34,11 +37,13 @@
             margin: auto 120px;
         }
 
+        /* for headings */
         .profile-card h1,h2{
             text-align: center;
             background-color: #1E293B;
         }
 
+        /* for buttons */
         .profile-card button{
             background-color: #2563EB;
             color: #FFFFFF;
@@ -51,14 +56,21 @@
 </head>
 <body>
 
+    <!-- Task Heading -->
     <h1 style="text-align: center; margin: 20px; color:white;">Profile Card</h1>
     
+    <!-- Profile Card Task -->
     <div class="profile-card">
+        <!-- Online Image -->
         <img src="https://avatars.githubusercontent.com/u/308851321?v=4" alt="Chirag Gohel Profile Picture">
 
+        <!-- About Me -->
         <h1>Chirag Gohel</h1>
         <h2 style="color:#2563EB; background-color: #1E293B;">Web Developer</h2><br>
-        <p style="color:#64748B; background-color: #1E293B;">I am learning web development and building practical projects. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti provident rerum perferendis.</p>
+        <p style="color:#64748B; background-color: #1E293B;">I am learning web development and building practical projects. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti provident rerum perferendis.</p><br>
+
+        <!-- Skills -->
+        <h3 style="color:#2563EB; background-color: #1E293B;">Skills</h3>
         <span style="color:white;  background-color: #1E293B;">HTML • CSS • Bootstrap • PHP</span><br><br>
         <button type="submit">Visit Profile</button>
     </div>
