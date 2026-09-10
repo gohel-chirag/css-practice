@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specificity & Cascade | Web Development</title>
+    <style>
+        /* CSS Specificity = 1 point */
+        h2{
+            color: blue;
+        }
+
+        /* CSS Specificity = 10 points */
+        .color-red{
+            color: red !important; /* !important thi color ne priority male chhe */
+        }
+
+        /* CSS Specificity = 100 points */
+        #color-purple{
+            color: purple;
+        }
+
+        /* CSS Specificity = 110 points */
+        .box #color-purple{
+            color: green;
+        }
+       
+
+        /* CSS ni styling ma 
+        First inline styling (<h1 style="color:red;"></h1>) ne priority male chhe,
+        Second id (#) selector ne male chhe,
+        Third class (.) selector ne male chhe 
+        jya !important; lakhyu hoi tene first priority male chhe */
+
+
+        /* CSS specificity calculation :
+        Inline styling = 1000
+        ID selector = 100
+        Class/pseudo-element selector = 10
+        Element selector = 1  */
+    </style>
 </head>
 <body>
+    <h1>Specificity & Cascade Properties</h1><hr>
+
+    <div class="box">
+        <h2 class="color-red" id="color-purple">Specificity testing</h2>
+    </div>
     
 </body>
 </html>
