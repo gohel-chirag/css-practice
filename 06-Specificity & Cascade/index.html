@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specificity & Cascade | Web Development</title>
     <style>
+
+        /* CSS ni styling ma 
+        First inline styling (<h1 style="color:red;"></h1>) ne priority male chhe,
+        Second id (#) selector ne priority male chhe,
+        Third class (.) selector ne priority male chhe 
+        khas jya (!important;) lakhyu hoi tene sauthi vadhu priority male chhe */
+
+        /* CSS specificity calculation :
+        Inline styling = 1000
+        ID selector = 100
+        Class/pseudo-element selector = 10
+        Element selector = 1  */
+
+
         /* CSS Specificity = 1 point */
         h2{
             color: blue;
@@ -24,20 +38,11 @@
         .box #color-purple{
             color: green;
         }
-       
 
-        /* CSS ni styling ma 
-        First inline styling (<h1 style="color:red;"></h1>) ne priority male chhe,
-        Second id (#) selector ne male chhe,
-        Third class (.) selector ne male chhe 
-        jya !important; lakhyu hoi tene first priority male chhe */
-
-
-        /* CSS specificity calculation :
-        Inline styling = 1000
-        ID selector = 100
-        Class/pseudo-element selector = 10
-        Element selector = 1  */
+        /* Query Selector 1 + 10 + 10 + 10 + 10 = 41 */
+        a.color-red .color-purple[href]:hover{
+            color: orange;
+        }
     </style>
 </head>
 <body>
