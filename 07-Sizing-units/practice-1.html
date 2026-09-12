@@ -5,42 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sizing units Practice-1 | Web Development</title>
     <style>
+        html{
+            font-size: 20px;
+        }
         .header{
             height:50px;
             width: 80%;
-            margin:10px auto;
+            margin: 40px auto;
             background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
         }
 
         .main{
             height: 300px;
-            min-height: 90vh;
+            min-height: 90vh; /* Minimum height 90vh (viewport height) rehse */
             width: 80%;
             margin: 10px auto;
             background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 0px;
+        }
+
+        .main p{
+            font-size: 3em !important; /* .main class na font ni default size 16px chhe (16*3em = 48px) */
         }
 
         .footer{
             height: 150px;
-            width: 80%;
+            width: 80%; 
             margin: 10px auto;
             background-color: lightcoral;
+            border: 1px solid black;
+            text-align: center;
+        }
+        
+        .footer p{
+            font-size: 2rem !important; /* . html (root element ni font size 20px) (20*2rem = 40px) */
         }
     </style>
 </head>
 <body>
     <!-- CSS Sizing Units Practice-1 -->
-
     <div class="header">
-        header
+        <h2>Header</h2>
     </div>
 
     <div class="main">
-        main
+        <h2>Main Content</h2>
+        <p class="em">em sizing units no use kari ne create karel pragraph, Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, in cupiditate optio cum ad magnam temporibus, magni quasi ipsam praesentium ratione culpa eum. Modi et officiis ipsa magni vel.
+        Hic labore, consequatur voluptas soluta adipisci, temporibus deleniti quae aspernatur impedit est totam. Reprehenderit pariatur ullam harum, commodi recusandae culpa fugit quas saepe temporibus blanditiis quia dolorum quis sed aspernatur.</p>
     </div>
 
     <div class="footer">
-        footer
+        <h3>Footer</h3>
+        <p>rem sizing unit html (root element ni size ne dhyran rakhi ne) sizing aape chhe.</p>
     </div>
 </body>
 </html>
