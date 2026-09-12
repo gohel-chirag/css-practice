@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units | Web Development</title>
+    <style>
+        html{
+            font-size: 30px; /* 1rem = 30px */
+        }
+
+        /* CSS Sizing Units */
+        .pixel{
+            width: 200px; /* Pixel Sizing */
+            height: 100px; /* Pixel Sizing */
+            background-color: lightblue; 
+            font-size: 20px; /* Pixel Sizing */
+        }
+
+
+        /* vw & vh Sizing units */
+        .vw-vh{
+            width: 80vw; /* Viewport Width Sizing | Screen na 80% width ma display thase*/
+            height: 70vh; /* Viewport Height Sizing | Screen na 70% height ma display thase*/ 
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 10px auto;
+            border: 2px solid black;
+        }
+
+
+        /* em & remSizing units */
+        .em{
+            width: 80vw;
+            height: 30vh;
+            background-color: lightcoral;
+            padding: 10px;
+            font-size: 20px; /* main parent container ni font size 20px chhe */
+            margin: 10px auto;
+            border: 2px solid black;
+        }
+
+        .em p{
+            /* font-size: 1em;  1 * 20px = 20px */
+            /* font-size: 2em;  2 * 20px = 40px */
+            font-size: 1.5em; /* 1.5 * 20px = 30px */
+        }
+
+        .rem{
+            width: 80vw;
+            height: 30vh;
+            background-color: lightyellow;
+            padding: 10px;
+            font-size: 30px;  /* rem ma parent container ni size thia nahi, root element ni size 30px chhe, to 1rem = 30px thase */
+            margin: 10px auto;
+            border: 2px solid black;
+        }
+
+        .rem p{
+            font-size: 1.5rem; /* 1.5 * 30px = 45px (html ni font size 30px chhe tena adhare sizing malse) */
+        }
+
+
+        /* vmin & vmax sizing */
+        .container{
+            width: 80vmin; /* aa device na minimum widht 80% rese */
+            height: 50vmax; /* aa device ni maximum height 50% rese */
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px auto;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Sizing Units</h1><hr>
+
+    <!-- Pixel Sizing -->
+    <p class="pixel">Pixel Sizing</p>
+
+
+    <!-- vw & vh sizing -->
+    <div class="vw-vh">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorem, sapiente accusantium adipisci error veritatis libero dolor voluptas quod recusandae, minus nulla laboriosam? Repudiandae, eligendi non? Ducimus sit voluptatibus molestias.
+    Vel maxime facere, suscipit officiis in libero corporis laudantium fugit quo minima? Quae voluptatem, repellendus rem, adipisci commodi quibusdam earum mollitia eum molestias veniam assumenda illum quasi exercitationem. Quos, placeat!</div>
+
+
+    <!-- em & rem sizing -->
+    <div class="em">
+        <p>em unit sizing Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit reprehenderit culpa quia dolores perferendis ipsa praesentium, sunt assumenda. Quisquam omnis illum nulla asperiores quia ducimus harum suscipit culpa expedita!</p>
+    </div>
+
+    <div class="rem">
+        <p>rem unit sizing Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit reprehenderit culpa quia dolores perferendis ipsa praesentium.</p>
+    </div>
+
+
+    <!-- vmin & vmax sizing -->
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis enim dolorem dolores reiciendis accusantium necessitatibus, earum dolorum laudantium. Autem fugiat aspernatur fugit suscipit perferendis placeat tenetur iste. Explicabo, laborum iusto?
+        Harum doloremque at doloribus obcaecati quo velit, provident adipisci, accusantium laudantium fugit quas soluta, est quisquam ipsum numquam repellendus ratione accusamus odit eveniet. Quam recusandae ratione reiciendis porro, distinctio natus!
+    </div>
+</body>
+</html>
