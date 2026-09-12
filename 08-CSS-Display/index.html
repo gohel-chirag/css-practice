@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property | Web Development</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* main heading */
+        h1{
+            text-align: center;
+            padding: 10px;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .topic-title{
+            text-align: center;
+            margin: 10px auto;
+        }
+
+
+        /* Inline Display Property */
+        .container{
+            width: 80%;
+            margin: 20px auto;
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .container .box{
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 100px;
+            padding: 20px;
+            /*margin: 10px auto 20px auto;  Inline display property ma margin top use nathi thai sakti */
+            display: inline;
+        }
+
+
+        /* inline-block Display Property */
+        .container .box-1{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px; 
+            display: inline-block;
+        }
+
+
+        /* block Display Property */
+        .container .box-2{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px; 
+            display: block;
+        }
+
+
+        /* None Display Property */
+        .container .box-3{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            margin: 10px;
+            display: none;
+        }
+
+
+        /* Visibility Property */
+        .container .box-4{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 100px;
+            padding: 30px;
+            margin: 10px;
+            display: inline;
+            visibility: hidden; /* Visibility: hidden/visible/collapse */
+        }
+
+        ul, ol{
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Display Property</h1>
+    <ol type="1">
+        <li>Inline</li>
+        <li>Block</li>
+        <li>Inline-Block</li>
+        <li>None</li>
+        <li>Flex</li>
+        <li>Visibility</li>
+    </ol><br>
+    
+    <ul>
+        <b>Note : </b>
+        <li>Display Flex property no use flex-box property ma thase</li>
+        <li>Display Grid property no use Grid property ma thase</li>
+        <li>Visibility Property same to same display none jevo hova thi concept clear karva mate practice karel chhe.</li>
+    </ul><br><hr>
+
+    <!-- Inline Display -->
+    <h2 class="topic-title">Inline Display</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+    <p><b>Imp : </b>Inline display property ma margin use kari sakta nathi &<br>Width & Height set na kari sakai.</p>
+
+
+    <!-- Inline-Block Display Property -->
+    <h2 class="topic-title">Inline-Block Display</h2>
+    <div class="container">
+        <div class="box-1">1</div>
+        <div class="box-1">2</div>
+        <div class="box-1">3</div>
+        <div class="box-1">4</div>
+        <div class="box-1">5</div>
+    </div>
+    <p><b>Imp : </b>Inline-block display property ma margin use kari sakai chhe &<br>Width & Height pan set kari sakai.</p>
+
+
+    <!-- Block Display Property -->
+    <h2 class="topic-title">Block Display</h2>
+    <div class="container">
+        <div class="box-2">1</div>
+        <div class="box-2">2</div>
+        <div class="box-2">3</div>
+        <div class="box-2">4</div>
+        <div class="box-2">5</div>
+    </div>
+    <p><b>Imp : </b>Block display property ma 100% width use kare chhe,<br>Width & Height pan set kari sakai.<br>New line thij start thai</p>
+
+
+    <!-- None Display Property -->
+    <h2 class="topic-title">None Display</h2>
+    <div class="container">
+        <div class="box-3">1</div>
+        <div class="box-3">2</div>
+        <div class="box-3">3</div>
+        <div class="box-3">4</div>
+        <div class="box-3">5</div>
+    </div>
+    <p><b>Imp : </b>Display None karva thi te content hide thai jay chhe &<br>Width & Height pan roktu nathi.</p>
+
+
+    <!-- Visibility Property -->
+    <h2 class="topic-title">Visibility Property</h2>
+    <div class="container">
+        <div class="box-4">1</div>
+        <div class="box-4">2</div>
+        <div class="box-4">3</div>
+        <div class="box-4">4</div>
+        <div class="box-4">5</div>
+    </div>
+    <p><b>Imp : </b>Visibility property no use content ne hide karva mate thai chhe &<br>pan te Width & Height roke chhe.</p>
+
+
+    <!--  Property -->
+    <h2 class="topic-title">Visibility Property</h2>
+    <div class="container">
+        <div class="box-4">1</div>
+        <div class="box-4">2</div>
+        <div class="box-4">3</div>
+        <div class="box-4">4</div>
+        <div class="box-4">5</div>
+    </div>
+    <p><b>Imp : </b>Visibility property no use content ne hide karva mate thai chhe &<br>pan te Width & Height roke chhe.</p>
+</body>
+</html>
