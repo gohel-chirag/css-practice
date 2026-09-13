@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property Practice-2 | Web Development</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        .navbar{
+            border:2px solid black;
+        }
+        .navbar .logo{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            margin:10px;
+            border-radius: 5px 20px;
+        }
+        .navbar a{
+            display:inline-block;
+            padding: 5px 20px;
+            border:2px solid black;
+            color: black;
+            border-radius:30px;
+            text-decoration: none;
+            margin:10px;
+        }
+        a:hover{
+            background-color: black;
+            color: white;
+            transition: .3s;
+        }
+
+
+        /* Products */
+        .products{
+            background-color: red;
+            width: 100%;
+            border-bottom: 2px solid black;
+        }
+        .products .watch{
+            width: 150px;
+            height: 200px; 
+            background-color:cadetblue;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .watch:hover{
+            transform: scale(1.03);
+            transition: .2s;
+        }
+
+
+        /* Offers */
+        .offers{
+            background-color: rgb(37, 190, 37);
+            border: 2px solid black;
+            border-radius: 5px 20px;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+        }
+        .offers p{
+            /* display: none; display none thi content hide thai chhe & space roktu nathi  */
+
+            visibility: hidden;  /* visibility hidden thi content hide thai chhe pan space roke chhe*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Rolex</div>
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+    </header>
+    <main>
+        <div class="products">
+            <div class="watch"></div>
+            <div class="watch"></div>
+            <div class="watch"></div>
+            <div class="watch"></div>
+            <div class="watch"></div>
+            <div class="watch"></div>
+            <div class="watch"></div>
+            <div class="watch"></div>
+        </div>
+
+        <div class="offers">
+            <p>Buy 2 watches</p>
+        </div>
+    </main>
+</body>
+</html>
