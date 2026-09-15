@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shadow & Border Property Practice | Web Development</title>
+    <style>
+        .card{
+            width:300px;
+            margin:20px auto;
+            border: 1px solid grey;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px grey;
+        }
+        .card h2{
+            text-align: center;
+        }
+        .card p{
+            line-height: 15px;
+            font-family: monospace;
+            padding: 10px 20px;
+        }
+        .card button{
+            width: 90%;
+            padding: 8px 10px;
+            margin: 0px 5% 15px 5%;
+            border:1px solid black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px grey;
+            background-color: white;
+            color:black;
+            transition: .3s;
+        }
+        .card button:hover{
+            color:white;
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="card">
+        <h2>Rolex Watch</h2>
+        <p>Premium Luxury Watch | Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis </p>
+        <button>View Details</button>
+    </div>
 </body>
+
 </html>
+
+
+<!-- 
+📝 Practice Task
+
+Ek "Product Card" banao.
+
+HTML ma:
+
+<div class="card">
+  <h2>Rolex Watch</h2>
+  <p>Premium Luxury Watch</p>
+  <button>View Details</button>
+</div>
+
+CSS ma aa requirements complete karo:
+
+Card ne 300px width aapo.
+Card par 2px solid border aapo.
+Border ne rounded corners aapo.
+Card par box-shadow aapo.
+Heading ane paragraph ne proper spacing aapo.
+Button par alag border aapo.
+Button par hover karta shadow change karo.
+ -->
