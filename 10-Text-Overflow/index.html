@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Text Overflow Property | Web Development</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            border: 2px solid grey;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+            /* 
+                visible	: Extra content bahar dekhay — default
+                hidden	: Extra content hide kari de
+                scroll	: Scrollbar hamesha batave
+                auto	: Jarur pade tyare scrollbar batave
+            */
+
+
+            /* 
+                Specific direction control kari shako:W
+                overflow-x → left-right overflow
+                overflow-y → up-down
+            */
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>Overflow Property</h1>
+    <hr>
+    <!-- overflow property no use tyare thay chhe jyare element ni content teni fixed width/height karta vadhu thai jay. -->
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam autem itaque eos hic, magni debitis est vero
+        vitae nihil, officiis ab quia quam nobis, facilis corrupti cumque aliquid molestiae non.
+        Quisquam quae dolorum consequuntur blanditiis quasi, natus ea, quibusdam repellendus dolorem porro nulla libero,
+        fuga sint quidem qui architecto odio. Porro veritatis debitis nesciunt animi ex culpa voluptatibus hic veniam.
+        Ab maxime obcaecati expedita saepe dicta? Facere, alias debitis. Voluptates pariatur sed repellendus veniam
+        inventore beatae fuga excepturi! Nemo aut sint animi laudantium tempora quidem dolor illum veniam nulla quae!
+        Blanditiis cupiditate voluptate, nihil ab maiores deleniti reprehenderit recusandae voluptas sed earum, fugit
+        quibusdam eum ipsam nobis officia enim similique obcaecati cum accusantium architecto eaque sapiente soluta!
+        Accusamus, enim. Ullam.
+        Nobis voluptates harum, molestiae quo illum architecto laudantium natus ipsa nihil nostrum earum sapiente
+        recusandae laboriosam! Neque praesentium quam eius blanditiis quasi dignissimos corporis est, nisi culpa et
+        tempora aliquam!
+    </div>
 </body>
+
 </html>
