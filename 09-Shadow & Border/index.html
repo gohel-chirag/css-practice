@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow & Border | Web Development</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        /* CSS Shadow Property */
+        /* outside | outset */
+        .box1{
+            width: 90vw;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius:20px;
+            box-shadow: 5px 5px 10px gray; 
+            /* 
+                >> Default outset box shadow hoi chhe,
+                >> box ni andar shadow create karva mate inset thi kari sakai chhe &
+                >> box shadow ni shorthand propertie "box-shadow: horizontal-position vertical-position blur shadow-color inset;"
+            */
+        }
+
+        /* inside | inset */
+        .box2{
+            width: 90vw;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius:20px;
+            box-shadow: 5px 5px 10px gray inset; 
+        }
+
+
+        /* CSS Border Property */
+        .box3{
+            width: 90vw;
+            padding: 20px;
+            margin: 20px auto;
+            border: 2px solid grey; 
+            /* 
+                >> border element ni bahar ek line/boundary banava mate use thay chhe. 
+                - Border ni width set kari shakay.
+                - Border no style set kari shakay: solid, dashed, dotted, etc.
+                - Border no color set kari shakay.
+                - Specific side ni border api shakay : border-top, border-right, border-bottom, border-left
+                - Border ne rounded banava border-radius use kari shakay.
+            */
+            border-radius:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shadow & Border Property in CSS</h1><hr>
+    <!-- Outset Shadow Property -->
+    <div class="box1">
+        <h2>Outside | Outset Shadow</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur nulla excepturi temporibus optio. Atque molestiae laborum, neque, ut iusto quam quidem, assumenda ducimus voluptate iure cum quos asperiores illum voluptas!
+        Ullam ratione maxime possimus dolorum eos similique harum consequuntur dolore soluta numquam hic, corporis laborum unde quasi voluptatum excepturi itaque eveniet fugiat aliquid mollitia delectus maiores facere rerum ipsa. Cum.
+    </div>
+
+    <!-- Inset Shadow Property -->
+    <div class="box2">
+        <h2>Inside | Inset Shadow</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur nulla excepturi temporibus optio. Atque molestiae laborum, neque, ut iusto quam quidem, assumenda ducimus voluptate iure cum quos asperiores illum voluptas!
+        Ullam ratione maxime possimus dolorum eos similique harum consequuntur dolore soluta numquam hic, corporis laborum unde quasi voluptatum excepturi itaque eveniet fugiat aliquid mollitia delectus maiores facere rerum ipsa. Cum.
+    </div>
+
+
+    <!-- Border Property -->
+    <div class="box3">
+        <h2>Border</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quasi numquam! Dignissimos quo voluptate libero tempore natus ipsum consequuntur quam facilis odio? Laudantium expedita at nostrum. Doloribus eos quos aliquam!
+        Maxime dolorum saepe molestias ut deserunt, quidem porro modi et magni similique obcaecati velit ad impedit consequuntur commodi harum quia recusandae fugit distinctio quis praesentium. Quis quam rem vel quasi!
+    </div>
+</body>
+</html>
