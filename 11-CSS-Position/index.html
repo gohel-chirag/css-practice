@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Position Property | Web Development</title>
     <style>
-        h1{
+        h1 {
             text-align: center;
         }
-        
+
         .container {
             width: 100%;
             height: 70vh;
@@ -60,6 +60,31 @@
             position: sticky;
             top: 0px;
         }
+
+
+        /* Absolute Position */
+        .absolute-box{
+            width: 200px;
+            height: 200px;
+            margin: 10px auto;
+            background-color: #142d4c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .white-box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            /* z-index: -1; */
+            top: 50px;
+            left: 50px;
+        }
     </style>
 </head>
 
@@ -67,7 +92,12 @@
     <h1>CSS Position</h1>
     <hr>
 
-    <!-- Stikcy Relative -->
+    <!-- Static Position -->
+    <div class="box">Static Position Container</div>
+    <!-- Default position. top, left, etc. normally kaam karta nathi. -->
+
+
+    <!-- Stikcy Position -->
     <div class="container">
         <div class="sticky-box">
             Sticky Position Container
@@ -76,7 +106,7 @@
     </div>
 
 
-    <!-- Position Relative -->
+    <!-- Relative Position -->
     <div class="container">
         <div class="relative-box">
             Relative Box Container
@@ -85,17 +115,19 @@
     </div>
 
 
-    <!-- Fixed Relative -->
+    <!-- Fixed Position -->
     <div class="fixed-box">
         Fixed Position Container
     </div>
     <!-- Element viewport ne reference kare; scroll karva chhata same jagyae rahe. -->
 
-
-    <!-- Static Position -->
+    
+    <!-- Absolute Position -->
     <div class="container">
-        <div class="box">Static Position Container</div>
-        <!-- Default position. top, left, etc. normally kaam karta nathi. -->
+        <div class="absolute-box">
+            <div class="white-box"></div>
+        </div>
+        <!-- Element normal document flow mathi bahar nikli jay; nearest positioned parent ne reference kare. -->
     </div>
 </body>
 
