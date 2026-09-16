@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property | Web Development</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        
+        .container {
+            width: 100%;
+            height: 70vh;
+            background-color: #9fd3c7;
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+
+        /* Relative Position */
+        .relative-box {
+            width: 200px;
+            height: 200px;
+            background-color: #142d4c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        /* Fixed Position */
+        .fixed-box {
+            width: 100px;
+            height: 100px;
+            background-color: #142d4c;
+            color: white;
+            padding: 20px;
+            border-radius: 50%;
+            text-align: center;
+            box-sizing: border-box;
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        /* Sticky Position */
+        .sticky-box {
+            width: 80vw;
+            height: 40px;
+            margin: 10px auto;
+            background-color: #142d4c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Position</h1>
+    <hr>
+
+    <!-- Stikcy Relative -->
+    <div class="container">
+        <div class="sticky-box">
+            Sticky Position Container
+        </div>
+        <!-- Scroll karta ek specific position par pahochya pachhi element sticky thai jay. -->
+    </div>
+
+
+    <!-- Position Relative -->
+    <div class="container">
+        <div class="relative-box">
+            Relative Box Container
+        </div>
+        <!-- Element potani original position ne reference kari ne move thay. -->
+    </div>
+
+
+    <!-- Fixed Relative -->
+    <div class="fixed-box">
+        Fixed Position Container
+    </div>
+    <!-- Element viewport ne reference kare; scroll karva chhata same jagyae rahe. -->
+
+
+    <!-- Static Position -->
+    <div class="container">
+        <div class="box">Static Position Container</div>
+        <!-- Default position. top, left, etc. normally kaam karta nathi. -->
+    </div>
+</body>
+
+</html>
