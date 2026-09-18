@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property Practice | Web Development</title>
+    <style>
+        *{
+            color:black;
+            width: 100%;
+        }
+        navbar{
+            color: black;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .card {
+            width: 300px;
+            height: 500px;
+            border: 1px solid grey;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid grey;
+        }
+        .card .content{
+            padding: 10px;
+        }
+
+        .card .badge {
+            border: 1px solid white;
+            border-radius: 20px;
+            font-size: 12px;
+            color: white;
+            padding: 5px 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .card .cart{
+            border:1px solid grey;
+            padding: 5px 10px;
+            width: 20%;
+            border-radius: 20px;
+            text-align: center;
+            margin: 0px 10%;
+            cursor: pointer;
+            position: fixed;
+            top:30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTivEkfcZi_Ru5RdPH8j2aavlMkreG6DmN0_nEofFGl3Q&s=10"
+            alt="Watch">
+        <span class="badge">New</span>
+        <div class="content">
+            <h2>Rolex Watch</h2>
+            <p>₹2,80,000</p>
+        </div>
+        <div class="cart">
+            🛒 Cart
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 
+
+Practice Task — Product Card
+
+Ek Product Card banao:
+
+<div class="card">
+  <img src="watch.jpg" alt="Watch">
+  <span class="badge">New</span>
+  <h2>Rolex Watch</h2>
+  <p>₹2,80,000</p>
+</div>
+
+Requirements :
+.card ne position: relative aapo.
+.badge ne position: absolute karo.
+Badge ne card na top-right corner ma mukvo.
+Card ne fixed width ane height aapo.
+Badge par top ane right use karo.
+Pachhi position: fixed use kari ne screen na bottom-right ma ek 🛒 Cart button mukvo.
+Last ma position: sticky use kari ne ek header banao.
+
+-->
