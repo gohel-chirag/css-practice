@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Practice | Web Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .products {
+            width: 100%;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            width: 25%;
+            height: 400px;
+            background-color: red;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        p {
+            font-size: 1em;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .products {
+                flex-direction: column;
+                margin: 10px auto;
+                flex-wrap: wrap;
+            }
+
+            .card {
+                width: 90%;
+                margin: 10px 5%;
+            }
+
+            p {
+                font-size: 1.5em;
+                padding: 40px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width:1024px) {
+            .products {
+                margin: 10px auto;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .card {
+                width: 100%;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="products">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique exercitationem ducimus vero praesentium
+            voluptatem mollitia assumenda incidunt, aut aperiam dolorem adipisci perferendis ipsum laboriosam dicta
+            quae, totam, dolores corporis expedita.
+            Possimus explicabo et excepturi. Necessitatibus voluptate hic laboriosam, velit quia dolorem ab cupiditate
+            magnam tempora esse. Voluptate tempore illum nam quos labore assumenda eligendi hic quis eos, vel nisi
+            possimus.
+            Sequi cum debitis quibusdam rem temporibus sed consequuntur aut maiores ab hic quam autem perferendis velit
+            unde recusandae, asperiores corporis fugiat vel ut atque quaerat, iusto placeat praesentium. Voluptatem,
+            consequatur.
+            Quas, suscipit. Consequuntur tempora aspernatur eius magnam ducimus? Unde reiciendis accusantium
+            perspiciatis repellendus, tempora, distinctio sint possimus doloremque cumque tenetur nostrum eum esse odit,
+            consequatur consectetur quam quas modi placeat.</p>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+📝 Practice Task — Responsive Product Cards
+Aa HTML banao:
+<div class="products">
+  <div class="card">Watch 1</div>
+  <div class="card">Watch 2</div>
+  <div class="card">Watch 3</div>
+  <div class="card">Watch 4</div>
+</div>
+
+Desktop CSS
+Desktop par 4 cards ek row ma:
+.products {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 25%;
+  height: 200px;
+}
+
+📱 Mobile Media Query
+600px ke ena karta ochhi screen par:
+Cards ek niche ek aavva joiye.
+Card ni width 100% thavi joiye.
+Font-size thodu smaller karo.
+@media (max-width: 600px) {
+  .products {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+-->
