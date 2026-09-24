@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variables Practice | Web Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #c9a227;
+            --dark-color: #111;
+            --light-color: #fff;
+            --card-padding: 20px;
+            --border-radius: 15px;
+            --border: 2px solid black;
+            --margin: 20px auto;
+            --padding: 10px;
+
+            /* For button */
+            --button-padding: 5px 10px;
+            --button-border: 1px solid black;
+            --button-bg-color: #c9a227;
+        }
+        body{
+            background-color: var(--light-color);
+        }
+        .card{
+            width: 200px;
+            height: 300px;
+            border: 1px solid var(--primary-color);
+            margin: var(--margin);
+            padding: var(--padding);
+            border-radius: var(--border-radius);
+            background-color: var(--light-color);
+        }
+        h2{
+            color: var(--dark-color);
+            margin: var(--margin);
+        }
+        button{
+            padding: var(--button-padding);
+            border: var(--button-border);
+            border-radius: var(--border-radius);
+            background-color: var(--button-bg-color);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="card">
+        <h2>Card</h2>
+        <button>Click Me</button>
+    </div>
 </body>
+
 </html>
+
+<!-- 
+📝 Practice Task — Rolex Product Card
+Ek simple product card banao ane pela variables create karo:
+:root {
+  --primary-color: #c9a227;
+  --dark-color: #111;
+  --light-color: #fff;
+  --border-radius: 12px;
+  --card-padding: 20px;
+}
+
+Requirements:
+body ma --light-color use kari background set karo.
+.card ma --light-color use kari background aapo.
+.card ma --border-radius use karo.
+.card ma --card-padding use karo.
+Heading ma --dark-color use karo.
+Button ma --primary-color use karo.
+Card ni border ma --primary-color use karo.
+Button ane card banne ma same --border-radius use karo.
+
+-->
