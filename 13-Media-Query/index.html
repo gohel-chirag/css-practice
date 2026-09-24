@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query | Web Development</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+        table{
+            border:1px solid;
+            width: 100%;
+            /* margin:5px auto; */
+        }
+        table td, th{
+            width: 50%;
+            border:1px solid black;
+            padding: 10px;
+        }
+
+        /*---------------*/
+        body{
+            background-color: red;
+        }
+
+        .boxes{
+            margin: 20px auto;
+            display: flex;
+        }
+
+        .box{
+            width: 50%;
+            height: 200px;
+            margin: 5px 10px;
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        @media only screen and (max-width: 479px){
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+                margin: 10px auto;
+            }
+            .box{
+                width: 95%;
+                height: 300px;
+                
+            }
+        }
+
+        @media only screen and (min-width: 481px) and (max-width:768px){
+            body{
+                background-color: grey;
+            }
+
+            .boxes{
+                margin: 10px auto;
+            }
+            .box{
+                width: 95%;
+                height: 300px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Device</th>
+                <th>Size</th>
+            </tr>
+            <tr>
+                <td>Small</td>
+                <td>0-480px</td>
+            </tr>
+            <tr>
+                <td><Textarea:cols></Textarea:cols>ablets</td>
+                <td>481-768px</td>
+            </tr>
+            <tr>
+                <td>Laptop & Monitor</td>
+                <td>769-1279px</td>
+            </tr>
+            <tr>
+                <td>Large Desktop</td>
+                <td>1279+px</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
