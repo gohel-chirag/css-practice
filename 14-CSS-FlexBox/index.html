@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flex Box | Web Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+
+        /* CSS Flex Box Property */
+        .container {
+            border: 1px solid black;
+            margin: 10px 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            gap:10px;
+        }
+
+        .item {
+            height: 40px;
+            width: 40px;
+            margin: 5px;
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        /* 
+        CSS Flex Box Property :
+
+        1) justify-content : Main axis par items ne align kare. 
+        2) align-items : Cross axis par items ne align kare.
+        3) gap : Items vachche space aape.
+        4) flex-wrap : Items ek j line ma rahe ke next line ma jay te control kare.
+        */
+    </style>
 </head>
+
 <body>
-    
+    <h1>CSS Flex Box Property</h1><hr>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
 </body>
+
 </html>
