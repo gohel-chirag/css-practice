@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Media Query | Web Development</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        html{
+
+        html {
             overflow-y: auto;
             overflow-x: auto;
         }
-        table{
-            border:1px solid;
+
+        table {
+            border: 1px solid;
             width: 100%;
             /* margin:5px auto; */
         }
-        table td, th{
+
+        table td,
+        th {
             width: 50%;
-            border:1px solid black;
+            border: 1px solid black;
             padding: 10px;
         }
 
         /*---------------*/
-        body{
+        body {
             background-color: red;
         }
 
-        .boxes{
+        .boxes {
             margin: 20px auto;
             display: flex;
         }
 
-        .box{
+        .box {
             width: 50%;
             height: 200px;
             margin: 5px 10px;
@@ -45,39 +50,57 @@
             border-radius: 10px;
         }
 
-        @media only screen and (max-width: 479px){
-            body{
+        @media only screen and (max-width: 479px) {
+            body {
                 background-color: blue;
             }
-            .boxes{
+
+            .boxes {
                 flex-direction: column;
                 margin: 10px auto;
                 flex-wrap: wrap;
             }
-            .box{
+
+            .box {
                 width: 90vw;
                 height: 300px;
-                
+
             }
         }
 
-        @media only screen and (min-width: 481px) and (max-width:768px){
-            body{
+        @media only screen and (min-width: 481px) and (max-width:768px) {
+            body {
                 background-color: grey;
             }
 
-            .boxes{
+            .boxes {
                 margin: 10px auto;
                 flex-wrap: wrap;
             }
-            .box{
+
+            .box {
                 width: 90vw;
                 height: 300px;
-                
+
             }
         }
+
+        /* 
+        CSS Media Query Property :
+        1) CSS @media no use screen/device ni condition pramane CSS change karva mate thay chhe.
+        2) max-width : Screen ni width aa value karta ochhi/equal hoy tyare CSS apply. (Mobile mate useful).
+        3) min-width : Screen ni width aa value karta moti/equal hoy tyare CSS apply. (Tablet/Desktop mate useful).
+        4) Multiple Conditions : 
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .card {
+                width: 50%;
+            }
+        }
+        768px થી 1024px vachche ni screen mate.
+        */
     </style>
 </head>
+
 <body>
     <div class="container">
         <table>
@@ -90,7 +113,9 @@
                 <td>0-480px</td>
             </tr>
             <tr>
-                <td><Textarea:cols></Textarea:cols>ablets</td>
+                <td>
+                    <Textarea:cols></Textarea:cols>ablets
+                </td>
                 <td>481-768px</td>
             </tr>
             <tr>
@@ -111,4 +136,5 @@
         <div class="box"></div>
     </div>
 </body>
+
 </html>
