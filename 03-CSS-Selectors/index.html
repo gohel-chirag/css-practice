@@ -12,11 +12,13 @@
             background-color:rgb(236, 236, 236)
         }
 
+
         /* Element Selector */
         div{
             background-color: aquamarine;
             padding: 10px;
         }
+
 
         /* ID Selector */
         #idselector{
@@ -24,11 +26,13 @@
             padding: 10px;
         }
 
+
         /* Class Selector */
         .classselector{
             background-color: rgb(255, 127, 127);
             padding: 10px;
         }
+
 
         /* Child Selector */
         span > p{
@@ -36,12 +40,63 @@
             padding: 10px;
         }
 
+
         /* Descendant Selector */
         section p{
             background-color: rgb(77, 94, 255);
             padding: 10px;
         }
 
+
+        /* First Child Selector
+        .box:first-child{
+            width: 100px;
+        } */
+
+
+        /* First Line Selector
+        .box::first-line{
+            color: red;
+        } */
+
+
+        /* Universal class Selector
+        .boxes *{
+            width: 100px;
+        } */
+
+
+        /* .box::before Selector
+        .boxes::before *{
+            content: "Before selector";
+        } */
+
+
+        /* .box::after Selector
+        .boxes::after *{
+            content: "after selector";
+        } */
+
+
+        /* .box::selection Selector
+        .boxes::selection *{
+            color: red;
+            background-color: black;
+        } */
+
+
+        /* .box::first-letter Selector
+        .boxes::first-letter *{
+            color: red;
+            font-size:20px;
+        } */
+
+
+        /* input:placeholder selector
+        input::placeholder *{
+            color: red;
+            font-size:20px;
+        } */
 
 
         /* Pseudo Selectors */
