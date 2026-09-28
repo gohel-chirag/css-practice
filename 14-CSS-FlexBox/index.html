@@ -11,11 +11,12 @@
             padding: 0;
             box-sizing: border-box;
         }
-        h1{
+        h1,h2{
             text-align: center;
         }
 
         /* CSS Flex Box Property */
+        /* Justify content : space between */
         .container {
             border: 1px solid black;
             margin: 10px 5px;
@@ -33,6 +34,50 @@
             border: 1px solid black;
         }
 
+        /* Justify content : space around */
+        .container2 {
+            border: 1px solid black;
+            margin: 10px 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            gap:10px;
+        }
+
+        /* Justify content : space evenly */
+        .container3 {
+            border: 1px solid black;
+            margin: 10px 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            gap:10px;
+        }
+
+        /* Justify content : center */
+        .container4 {
+            border: 1px solid black;
+            margin: 10px 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            gap:10px;
+        }
+
+        /* Justify content : center */
+        .container5 {
+            height: 300px;
+            border: 1px solid black;
+            margin: 10px 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+            gap:20px;
+            row-gap: 0px;
+            /* column-gap: 0px; */
+        }
+
         /* 
         CSS Flex Box Property :
 
@@ -45,8 +90,85 @@
 </head>
 
 <body>
-    <h1>CSS Flex Box Property</h1><hr>
+    <h1>CSS Flex Box Property</h1><hr><br>
+    <h2>Justify content : Space Between</h2>
     <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div><br>
+
+
+    <h2>Justify content : Space Around</h2>
+    <div class="container2">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div><br>
+
+
+    <h2>Justify content : Space Evenly</h2>
+    <div class="container3">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div><br>
+
+
+    <h2>Justify content : Center</h2>
+    <div class="container4">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div><br>
+
+
+    <h2>align-items : Center</h2>
+    <div class="container5">
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
