@@ -4,8 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Transform Property | Web Development</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+        .container-1{
+            width: 90%;
+            height: 200px;
+            margin: 0 auto;
+            border: 2px solid;
+        }
+
+        /* Translate */
+        .box-1{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: red;
+            transform: translate(70px, 10px);
+            /* Parent container ne dhyan ma rakhi ne uper thi 10px &  left thi 70px move thayu,
+            
+            traslate property no use content ne move karva mate thai chhe. */
+        }
+
+        /* Rotate */
+        .box-2{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: red;
+            transform: rotate(45deg);
+            /* Parent container ne dhyan ma rakhi ne 45deg rotate thai sake chhe
+            
+            rotate property no use content ne rotate karva mate thai chhe. */
+        }
+
+
+        /* Scale */
+        .box-3{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: red;
+            transform: scale(1.3);
+            /* content ne dhyan ma rakhi ne content ni size change karu sa */
+        }
+
+
+        /* Skew */
+        .box-4{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: red;
+            transform: skew(30deg);
+            /* content ne kheche chhe koi ek side thi kechai chhe */
+        }
+
+
+        /* Multiple Transform Properties */
+        .box-5{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: red;
+            transform: translateX(50px) rotate(20deg) scale(1.1) skew(30deg);
+            /* Multiple Transforms, move->rotate->scale->skew thase. */
+        }
+    </style>
 </head>
-<body>
-    
+<body><<br>
+    <h1>Trasform : Translate</h1> 
+    <div class="container-1">
+        <div class="box-1">Box</div>
+    </div><br>
+
+    <h1>Translate : Rotate</h1> 
+    <div class="container-1">
+        <div class="box-2">Box</div>
+    </div><br>
+
+    <h1>Translate : Scale</h1> 
+    <div class="container-1">
+        <div class="box-3">Box</div>
+    </div><br>
+
+    <h1>Translate : Skew</h1> 
+    <div class="container-1">
+        <div class="box-4">Box</div>
+    </div><br>
+
+    <h1>Multiple Transforms</h1> 
+    <div class="container-1">
+        <div class="box-5">Box</div>
+    </div>
 </body>
 </html>
