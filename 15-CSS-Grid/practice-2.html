@@ -14,17 +14,21 @@
 
         .container {
             width: 90%;
+            background-color: #8D84D6;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 20px auto;
             padding: 30px;
-            border: 1px solid red;
-            display: flex;
-            margin: 0 auto;
-            gap: 30px;
+            text-align: center;
+            gap: 20px;
         }
 
         .card {
-            width: 300px;
-            height: 300px;
+            height: 200px;
+            background-color: #D6E6F2;
             border: 1px solid;
+            border-radius: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,17 +37,14 @@
         /* For Mobile */
         @media (max-width:426px) {
             .container {
-                flex-wrap: wrap;
+                grid-template-columns: repeat(1, 1fr);
             }
         }
 
         /* For Tablet */
-        @media (max-width:769px) {
+        @media (min-width:427px) and (max-width:769px) {
             .container {
-                width: 90%;
-                margin: 0 auto;
-                flex-wrap: wrap;
-                column-gap: 30px;
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
