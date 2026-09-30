@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Practice | Web Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 95%;
+            height: auto;
+            margin: 30px auto;
+            /* background-color:rgb(120, 167, 255); 
+            border: 1px solid black; */
+            display: grid;
+            grid-template-areas: "navbar navbar navbar"
+                "sidebar main main"
+                "footer footer footer";
+            gap: 10px;
+            /* row-gap: 10px;
+            column-gap: 5px; */
+        }
+
+        .box {
+            /* height: 100px; */
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            height: 50px;
+            position: sticky;
+            top:0px;
+            background-color: darkred;
+            grid-area: navbar;
+            text-align: center;
+            font-size: 20px;
+        }
+        .box1::before {
+            content: "Navbar";
+        }
+
+        .box2 {
+            height: 130vh;
+            background-color: aquamarine;
+            grid-area: sidebar;
+            text-align: center;
+            font-size: 20px;
+        }
+        .box2::before {
+            content: "Sidebar";
+        }
+
+        .box3 {
+            background-color: blueviolet;
+            grid-area: main;
+            text-align: center;
+            font-size: 20px;
+        }
+        .box3::before {
+            content: "Main";
+        }
+
+        .box5 {
+            height: 200px;
+            background-color:dimgray;
+            grid-area: footer;
+            text-align: center;
+            font-size: 20px;
+        }
+        .box5::before {
+            content: "Footer";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1 navbar"></div>
+        <div class="box box1 navbar"></div>
+        <div class="box box1 navbar"></div>
+        <div class="box box2 sidebar"></div>
+        <div class="box box3 main"></div>
+        <div class="box box3 main"></div>
+        <div class="box box5 footer"></div>
+        <div class="box box5 footer"></div>
+        <div class="box box5 footer"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Property | Web Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            height: auto;
+            margin: 30px auto;
+            /* background-color:rgb(120, 167, 255); 
+            border: 1px solid black; */
+            display: grid;
+            
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-rows: repeat(5, 200px); */
+            gap: 30px;
+            /* row-gap: 20px; */
+            /* column-gap: 10px; */
+
+
+        }
+
+        .box{
+            height: 500px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+
+
+
+        /* For Largest Device */
+        @media screen and (min-width:1440px){
+            .container{
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+        }
+
+
+        /* For Tablet */
+        @media screen and (max-width:770px){
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        /* For Small Mobile */
+        @media screen and (max-width:500px){
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid Property</h1>
+    <hr>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
