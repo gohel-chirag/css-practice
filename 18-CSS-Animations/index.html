@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Animations Property | Web Development</title>
+    <style>
+        .box {
+            height: 150px;
+            width: 150px;
+            border: 2px solid;
+            animation: moveBox 5s;
+            background-color: rgba(136, 197, 255, 0.533);
+        }
+
+        /* @keyframes moveBox {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        } */
+
+        
+        @keyframes moveBox {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(200px);
+            }
+
+            50% {
+                transform: translateX(300px);
+            }
+
+            75% {
+                transform: translateX(400px);
+            }
+
+            100% {
+                transform: translateX(500px);
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <div class="box">
+
+    </div>
+
+    <!-- Key Frame
+     .box {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            animation: moveBox 2s;
+    }
+    @keyframes moveBox {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(200px);
+        }
+    } 
     
+    Page load thay tyare .box automatically 0px thi 150px move thase.
+    -->
+
+
+    <!-- Percentage Method
+        @keyframes moveBox {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(200px);
+            }
+
+            50% {
+                transform: translateX(300px);
+            }
+
+            75% {
+                transform: translateX(400px);
+            }
+
+            100% {
+                transform: translateX(500px);
+            }
+        }
+
+        Percentage method thi vachche na multiple points banavi sakay.
+    -->
+
+
+    <!-- Animation
+        animation-name: moveBox; (Kayi @keyframes animation use karvi?)
+        animation-duration: 2s; (Animation ketla time ma complete thase?)
+        animation-iteration-count: 3s/infinite; (Animation ketli vaar repeat thase?)
+        animation-timing-function: ease-in-out; (Animation ni speed kevi rite change thase?) ease/linear/ease-in/ease-out/ease-in-out
+        animation-delay: 1s; (Animation start thata pela ketlo delay a mate)
+        animation-direction: alternate; (Animation kai direction ma chalvi joiye?) normal/reverse/alternate/alternate-reverse
+        animation-fill-mode: forwards; (Animation start/end time par element ni style shu hovi joiye te control kare.)
+
+
+        Shorthand :
+        .box {
+            animation: moveBox 2s ease-in-out 1s infinite alternate;
+        }
+    -->
 </body>
+
 </html>
