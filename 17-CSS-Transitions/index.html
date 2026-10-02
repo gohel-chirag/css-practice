@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Transitions Property | Web Development</title>
+    <style>
+        /* 
+        Colors :
+        Container : #0F1E3A
+        box : #A7B6D0
+        traslate : #FFFFFF
+        */
+        .container {
+            height: 80vh;
+            width: 80vw;
+            background-color: #0F1E3A;
+            margin: 30px auto;
+            padding-top: 50px;
+        }
+        span{
+            font-size: 1.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box, .box-2, .box-3, .box-4{
+            cursor: pointer;
+        }
+
+
+        /*===== Ease =====*/
+        .box {
+            width: 10%;
+            height: 5%;
+            margin-left: 30px;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            background-color: #A7B6D0;
+            transition: all 3s ease 1s;
+        }
+
+        .box:hover {
+            border: 2px solid black;
+            box-shadow: 0px 0px 20px white;
+            transform: translate(30vw);
+            background-color: #FFFFFF;
+        }
+
+        /*===== Ease in =====*/
+        .box-2 {
+            width: 10%;
+            height: 5%;
+            margin-left: 30px;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            background-color: #A7B6D0;
+            transition: all 3s ease-in 1s;
+        }
+
+        .box-2:hover {
+            border: 2px solid black;
+            box-shadow: 0px 0px 20px white;
+            transform: translate(30vw);
+            background-color: #FFFFFF;
+        }
+
+        /*===== Ease in out =====*/
+        .box-3 {
+            width: 10%;
+            height: 5%;
+            margin-left: 30px;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            background-color: #A7B6D0;
+            transition: all 3s ease-in-out 1s;
+        }
+
+        .box-3:hover {
+            border: 2px solid black;
+            box-shadow: 0px 0px 20px white;
+            transform: translate(30vw);
+            background-color: #FFFFFF;
+        }
+
+        /*===== Ease out =====*/
+        .box-4 {
+            width: 10%;
+            height: 5%;
+            margin-left: 30px;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            background-color: #A7B6D0;
+            transition: all 3s ease-out 1s;
+        }
+
+        .box-4:hover {
+            border: 2px solid black;
+            box-shadow: 0px 0px 20px white;
+            transform: translate(30vw);
+            background-color: #FFFFFF;
+        }
+
+
+        /*======= Transition Property ======*/
+        /* transition-property : all/background-color,color (kai property smooth karvi a mate) */
+        /* transition-duration : 3s (change ketla time ma thavi joi a mate) */
+        /* transition-timing-function : ease/ease-in/ease-in-out/ease-out (animation ni speed kevi rite change thase a control karva mate) [style] */
+        /* transition-delay : 2s (change thava ma ketlo time lagvo joi a, a mate) */
+        /* transition : all 3s ease 1s (shorthand transitions) */
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="box"><span>ease</span></div><br>
+        <div class="box-2"><span>ease in</span></div><br>
+        <div class="box-3"><span>ease in out</span></div><br>
+        <div class="box-4"><span>ease out</span></div><br>
+    </div>
 </body>
+
 </html>
