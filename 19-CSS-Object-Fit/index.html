@@ -29,6 +29,9 @@
             box-sizing: border-box;
         }
 
+
+
+        /* object-fit : cover */
         .img-1{
             width: 200px;
             height:200px;
@@ -37,6 +40,7 @@
             object-fit: cover; 
         }
         
+        /* object-fit : contain */
         .img-2{
             width: 200px;
             height:200px;
@@ -45,6 +49,7 @@
             object-fit: contain;
         }
 
+        /* object-fit : fill */
         .img-3{
             width: 200px;
             height:200px;
@@ -53,6 +58,7 @@
             object-fit: fill;
         }
 
+        /* object-fit : none */
         .img-4{
             width: 200px;
             height: 200px;
@@ -61,12 +67,25 @@
             object-fit: none;
         }
 
+        /* object-fit : Scale-down */
         .img-5{
             width: 200px;
             height: 200px;
             background-color: white;
             border: 2px solid #000;
             object-fit: scale-down;
+        }
+
+
+        /* Object-Position : bottom left */
+        .img-6{
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            background-color: white;
+            border: 2px solid #000;
+            object-fit: cover;
+            object-position: bottom left;
         }
     </style>
 </head>
@@ -110,7 +129,14 @@
     <div class="container">
         <img class="img-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxrWsdJFvBx8g6CtZnXj9S9xcOtMmEysWTAz1M-HSrxg&s=10" alt="Online Image"><br>
         <h2>object-fit: scale-down; </h2>
-        <p>none athva contain mathi je smaller result hoy te apply kare</p>
+        <p>none athva contain mathi je smaller result hoy te apply kare xa</p>
+    </div>
+
+    <!-- Position center -->
+    <div class="container">
+        <img class="img-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxrWsdJFvBx8g6CtZnXj9S9xcOtMmEysWTAz1M-HSrxg&s=10" alt="Online Image"><br>
+        <h2>object-position: bottom left; </h2>
+        <p>Image ni position set kare.</p>
     </div>
 </section>
 </body>
