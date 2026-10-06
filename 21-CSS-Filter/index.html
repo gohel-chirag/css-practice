@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filter | Web  Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .container {
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Grayscale */
+        .img-1{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        /* Brightness */
+        .img-2{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            filter: brightness(100%);
+        }
+
+        /* Blur */
+        .img-3{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            filter: blur(5px);
+        }
+
+        /* Contrast */
+        .img-4{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            filter: contrast(150%);
+        }
+
+        /* Opacity */
+        .img-5{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            filter: opacity(50%);
+        }
+
+        /* Saturate */
+        .img-6{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            filter: saturate(400%);
+        }
+
+        /* Invert */
+        .img-7{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            filter: invert(100%);
+        }
+
+
+        /* CSS filter no use image, element athva content na visual appearance ne change karva mate thay chhe.
+        Brightness, blur, grayscale, contrast, color intensity jeva effects easily api shakay. */
+    </style>
+</head>
+<body>
+<section>
+    <!-- Grayscale -->
+    <div class="container">
+        <img class="img-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxrWsdJFvBx8g6CtZnXj9S9xcOtMmEysWTAz1M-HSrxg&s=10" alt="online image""><br>
+        <p>Grayscale (120px)</p>gray scale no use image ne black ane white ma convert karva mate thay chhe.
+    </div>
+
+    <!-- Brightness -->
+    <div class="container">
+        <img class="img-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxrWsdJFvBx8g6CtZnXj9S9xcOtMmEysWTAz1M-HSrxg&s=10" alt="online image"">
+        <p>Brightness (100%)</p>Image/content ne bright athva dark kare.
+    </div>
+
+    <!-- Blur -->
+    <div class="container">
+        <img class="img-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxrWsdJFvBx8g6CtZnXj9S9xcOtMmEysWTAz1M-HSrxg&s=10" alt="online image"">
+        <p>Blur (5px)</p>Element ne blur kare.
+    </div>
+
+    <!-- Contrast -->
+    <div class="container">
+        <img class="img-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxrWsdJFvBx8g6CtZnXj9S9xcOtMmEysWTAz1M-HSrxg&s=10" alt="online image"">
+        <p>filter: contrast(150%);</p>Light ane dark vachche no difference control kare.
+    </div>
+
+    <!-- Opacity -->
+    <div class="container">
+        <img class="img-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxrWsdJFvBx8g6CtZnXj9S9xcOtMmEysWTAz1M-HSrxg&s=10" alt="online image"">
+        <p>filter: opacity(50%);</p>element ni opacity control kare chhe.
+    </div>
+
+    <!-- Saturate -->
+    <div class="container">
+        <img class="img-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxrWsdJFvBx8g6CtZnXj9S9xcOtMmEysWTAz1M-HSrxg&s=10" alt="online image"">
+        <p>filter: saturate(200%);</p>Image ni color intensity control kare chhe.
+    </div>
+
+    <!-- Invert -->
+    <div class="container">
+        <img class="img-7" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxrWsdJFvBx8g6CtZnXj9S9xcOtMmEysWTAz1M-HSrxg&s=10" alt="online image"">
+        <p> filter: invert(100%);</p>Invert no use image ni color ne invert karva mate thay chhe.
+    </div>
+
+
+    <!-- 
+        grayscale(px)   -> Black & White
+        blur(px)        -> Blur
+        brightness(%)  -> Bright/Dark
+        contrast(%)    -> Contrast
+        opacity(%)     -> Transparent
+        sepia(%)       -> Vintage
+        saturate(%)    -> Color Strong
+        hue-rotate(deg)  -> Color Change
+        invert(%)      -> Opposite Color
+    -->
+</section>
+</body>
+</html>
