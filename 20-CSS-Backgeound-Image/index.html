@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Background Practice | Web Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqbGF1fROrgvG7utycfeqjnf751YDYaf0WVXs_SBQuSw&s=10");
+            background-size: cover;
+            background-position: center;
+        }
+        /* 
+        Background Image no use element ni background ma image mukva thay chhe.
+        Background Image aapvathi pura page ma image set kari sakai chhe.
+        */
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDYjEMaPqgfa5mdmS1Z3-yPrujOf7JHYgdZq7IDVDAw&s=10");
+            background-size: cover;
+            background-position: center;
+        }
+        /* Background image no use koi specific section mate pan kari sakai chhe. */
+
+
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>background container</h1>
+    </div>
+
+    <!-- 
+        1. Simple Background Image
+        body {
+            background-image: url("");
+        }
+
+        Pura page ni background image.
+
+
+
+        2. Specific Section ma Image
+        .hero {
+            height: 500px;
+            background-image: url("");
+        }
+        Fakat .hero section ni background ma image aavshe.
+
+
+        3. background-size
+        .hero {
+            background-image: url("hero.jpg");
+            background-size: cover;
+        }
+        background-size: cover; thi image pura section ma cover thase.
+        background-size: contain; thi image pura section ma cover thase pan image ni aspect ratio maintain thase.
+
+        4. background-position
+        .hero {
+            background-position: center;
+        }
+        Image ni position control kare.
+        center
+        top
+        bottom
+        left
+        right
+
+
+        5. background-repeat
+        Common:
+        repeat
+        no-repeat
+        repeat-x
+        repeat-y
+        
+        background-repeat: no-repeat; thi image ek vaar j aavshe.
+        background-repeat: repeat; thi image repeat thase.
+
+    -->
 </body>
+
 </html>
